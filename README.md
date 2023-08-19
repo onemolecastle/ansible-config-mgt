@@ -8,6 +8,4 @@ try now
 lets go again
 now
 back again
-back again
-no back
-start agai
+back agai
