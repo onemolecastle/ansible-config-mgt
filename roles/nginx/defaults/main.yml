@@ -78,13 +78,13 @@ nginx_vhosts: []
 #   template: "" # Can be used to override the `nginx_vhost_template` per host.
 #   state: "absent" # To remove the vhost configuration.
 
-nginx_upstreams: 
- - name: myapp1
-   strategy: "ip_hash" # "least_conn", etc.
-   keepalive: 16 # optional
-   servers:
-     - "http://18.117.81.209:80 weight=3"
-     - "http://18.220.158.9:80 weight=3"
+#nginx_upstreams: 
+ #- name: myapp1
+  # strategy: "ip_hash" # "least_conn", etc.
+   #keepalive: 16 # optional
+   #servers:
+    # - "http://18.117.81.209:80 weight=3"
+     #- "http://18.220.158.9:80 weight=3"
      
 
 nginx_log_format: |-
@@ -92,5 +92,5 @@ nginx_log_format: |-
   '$status $body_bytes_sent "$http_referer" '
   '"$http_user_agent" "$http_x_forwarded_for"'
 
-enable_nginx_lb: true
+enable_nginx_lb: false
 load_balancer_is_required: false
