@@ -16,7 +16,7 @@ pipeline{
 
       stage('Checkout SCM') {
          steps{
-            git branch: 'main', url: 'https://github.com/onemolecastle/ansible-config-mgt.git'
+            git branch: 'newfeature', url: 'https://github.com/onemolecastle/ansible-config-mgt.git'
          }
        }
 
