@@ -2,4 +2,4 @@
 172.31.29.242 ansible_ssh_user='ubuntu'
 
 [sonar]
-172.31.25.35 ansible_ssh_user='ubuntu'
+172.31.26.237 ansible_ssh_user='ubuntu'
