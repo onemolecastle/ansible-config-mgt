@@ -58,8 +58,8 @@
 
     - name: unzip the artifacts
       ansible.builtin.unarchive:
-       src: /home/ec2-user/php-todo
-       dest: /home/ec2-user/
+       src: /home/ec2-user/
+       dest: /home/ec2-user/php-todo
        remote_src: yes
 
     - name: deploy the code
